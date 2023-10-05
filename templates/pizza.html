@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <table>
     {% for pizza in pizzas %}
     <tr>
+        <td><img width="200px" src="http://127.0.0.1:8000/{{ pizza.img }}"></td>
         <td>{{ pizza.name }}</td>
-        <td>{{ pizza.price }}Ft</td>
+        <td>{{ pizza.price }} Ft</td>
     </tr>
     {% endfor %}
     </table>

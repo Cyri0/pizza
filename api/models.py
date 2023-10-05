@@ -12,4 +12,8 @@ class Pizza(models.Model):
         return self.name + " (" + str(self.price) + "Ft)"
 
     def serializer(self):
-        return {"name":self.name, "price":self.price}
+        return {
+            "name":self.name,
+            "price":self.price,
+            "img": str(self.img)
+        }
