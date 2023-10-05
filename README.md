@@ -10,7 +10,7 @@
 
 `pip install -r requirements.txt`
 
-pizza mappában secret.py létrehozása, és utána, KEY változó felvétele és értékadás (pl.: KEY="ALMA")
+pizza mappában secret.py létrehozása (ugyan abba a mappába, ahol a settings.py van), és utána, KEY változó felvétele és értékadás (pl.: KEY="ALMA")
 
 `python manage.py runserver`
 
